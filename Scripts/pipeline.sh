@@ -28,12 +28,12 @@ if [ "$2" = "" ]; then
 fi
 
 
-if [ "$1" != "" ] && [ "$2" != "" ] && [ "$3" = "" ] && [ "$4" = "" ]; then
+if [ "$3" = "" ]; then
     echo "This Strain will be annotated with 1 parent"
     one=true
 fi
 
-if [ "$1" != "" ] && [ "$2" != "" ] && [ "$3" != "" ] && [ "$4" = "" ]; then
+if [ "$4" = "" ]; then
     echo "This Strain has 2 parents"
     two=true
 fi
